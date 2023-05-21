@@ -1,26 +1,13 @@
-const express = require('express');
-const ejs = require('ejs')
-
+const express = require("express");
+const ejs = require("ejs");
 const app = express();
-app.set('view engine', 'ejs');
+const mainRoutes = require("./routes/mainRoutes");
 
-app.use(express.static('public'));
+app.set("view engine", "ejs");
 
-app.get('/', (req, res) => {
-    res.render('home')
-});
+app.use(express.static("public"));
 
-app.get('/about', (req, res) => {
-    res.render('about')
-});
+app.use("/", mainRoutes);
 
-app.get('/logIn', (req, res) => {
-    res.render('logIn')
-});
-
-app.get('/contact', (req, res) => {
-    res.render('contact')
-});
-
-app.listen('3000')
-console.log('server runnig on port 3000')
+app.listen("3000");
+console.log("server runnig on port 3000");
