@@ -1,29 +1,31 @@
 :root {
+    /*ligth*/
     --turquesa: #6cf3d5;
     --verde: #21a3a3;
     --gris: rgb(240, 237, 237);
-    --gris2: rgb(201, 195, 195);
+    --gris2: rgba(207, 205, 205, 0.849);
     --degradado: linear-gradient(180deg, var(--gris), rgba(218, 217, 217, 0));
+    /*nigth*/
+    --negro: rgb(20, 20, 20);
+    --degradado2: --degradado: linear-gradient(180deg, var(--negro), rgba(218, 217, 217, 0));
+    --gris3: rgba(24, 24, 24, 0.966);
 }
 
 
 header {
     width: 100%;
-    color: var(--verde);
     top: 5px;
     position: fixed;
     z-index: 1000;
     padding-top: 10px;
     padding-right: 40px;
-    background: var(--gris);
 }
 
 .header-content {
-    width: 100%;
-    margin-right: 20px;
     display: flex;
     height: 62px;
     justify-content: space-between;
+    transition: .5s;
     background: var(--gris);
 }
 
@@ -52,49 +54,52 @@ header {
     background: var(--gris);
     display: flex;
     justify-content: space-between;
-    transition: .8s, width .5s;
-    transition-delay:  .35s, 0s;
+    transition: .5s;
+
     overflow: hidden;
-    border-bottom-left-radius: 50px;
+    border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
 }
 
 .active__navigation {
     width: 300px;
-    height: 400px;
+    height: 420px;
     z-index: 2000;
     background: var(--gris2);
 }
 
 .navigation .userBx {
     position: relative;
-    width: calc(100% - 60px);
+    width: 60px;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: .8s;
+    transition: .5s;
     transition-delay: .35s;
     overflow: hidden;
 }
 
+.active__navigation .userBx {
+    width: 240px;
+}
+
 .navigation .userBx .imgBx {
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     overflow: hidden;
-    background: black;
     border-radius: 50%;
     overflow: hidden;
     transition: .5s;
     transition-delay: .8s;
     transition-delay: .35s;
-    border: 8px solid var(--gris);
+    margin-left: 10px;
+    border: solid var(--gris) 1.5px;
+    box-shadow: 0 0 0 2px black;
+
 }
 
-.active__navigation .userBx .imgBx{
-    border: 8px solid var(--gris2);
-}
 
 .navigation .userBx .imgBx img {
     position: absolute;
@@ -111,19 +116,14 @@ header {
     color: black;
     font-size: 1.4em;
     margin-left: 63px;
-    opacity: 0;
     transition: .5s;
-    transition-delay: .7s;
 }
 
-.active__navigation .userBx p {
-    opacity: 1;
-}
+
 
 /*--------BOTON DE MENU--------*/
 
 .bars__menu {
-    background: var(--gris);
     width: 60px;
     height: 60px;
     padding: 15px;
@@ -133,9 +133,6 @@ header {
     transition-delay: .35s;
 }
 
-.active__navigation .bars__menu {
-    background: var(--gris2);
-}
 
 .bars__menu span {
     display: block;
@@ -191,22 +188,47 @@ header {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-.degradado{
-    display: flex;
-    color: transparent;
-    background: linear-gradient(180deg, var(--gris), rgba(218, 217, 217, 0));
-    margin-bottom: -30px;
+.theme{
+    cursor: pointer;
 }
+
+.darck-theme .header-content {
+    background: var(--negro);
+}
+
+.darck-theme .header-content .navigation {
+    background: var(--negro);
+}
+
+.darck-theme .header-content .active__navigation {
+    background: var(--gris3);
+}
+
+.darck-theme .userBx p {
+    color: white;
+}
+
+.darck-theme .bars__menu span {
+    background: white;
+}
+
+.darck-theme .menu li a {
+    color: white;
+}
+
+.darck-theme .userBx .imgBx {
+    border: solid var(--negro) 1.5px;
+    box-shadow: 0 0 0 2px rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
 
