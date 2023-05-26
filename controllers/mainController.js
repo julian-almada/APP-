@@ -14,6 +14,14 @@ const controller = {
   contact: (req, res) => {
     return res.render("contact");
   },
+
+  carrito: (req, res) => {
+    return res.render("carrito");
+  },
+
+  404: (req, res) => {
+    return res.render("404");
+  }
 };
 
 module.exports = controller;
