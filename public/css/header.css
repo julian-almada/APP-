@@ -3,10 +3,12 @@
     --turquesa: #6cf3d5;
     --verde: #21a3a3;
     --gris: rgb(240, 237, 237);
+    --gris1: rgba(240, 237, 237, 0.767);
     --gris2: rgba(207, 205, 205, 0.849);
     --degradado: linear-gradient(180deg, var(--gris), rgba(218, 217, 217, 0));
     /*nigth*/
     --negro: rgb(20, 20, 20);
+    --negro1: rgba(20, 20, 20, 0.863);
     --degradado2: --degradado: linear-gradient(180deg, var(--negro), rgba(218, 217, 217, 0));
     --gris3: rgba(24, 24, 24, 0.966);
 }
@@ -14,33 +16,60 @@
 
 header {
     width: 100%;
-    top: 5px;
+    top: 0;
     position: fixed;
     z-index: 1000;
-    padding-top: 10px;
     padding-right: 40px;
+    background: var(--gris);
+    padding-top: 10px;
+    transition: .5s;
+}
+
+.darck-theme header {
+    background: var(--negro);
 }
 
 .header-content {
+    top: 0;
     display: flex;
-    height: 62px;
+    height: 52px;
     justify-content: space-between;
-    transition: .5s;
     background: var(--gris);
+    transition: .5s;
 }
 
 .logo {
-    position: relative;
     width: 60px;
     height: 60px;
+    color: black;
+    display: flex;
+    transition: 2.5s;
 }
 
-.logo img {
-    position: relative;
-    width: 70px;
-    height: 60px;
-    overflow: hidden;
+.logo .the {
+    position: absolute;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    left: 13.5px;
+    top: 0;
 }
+
+.logo .clothing {
+    position: absolute;
+    font-size: 20px;
+    top: 11px;
+    padding: 0;
+    margin: 0;
+}
+
+.logo .store{
+    position: absolute;
+    font-size: 15px;
+    top: 27px;
+    left: 35px;
+}
+
 
 
 
@@ -49,13 +78,13 @@ header {
 
 .navigation {
     position: relative;
+    top: -10px;
     width: 120px;
     height: 60px;
     background: var(--gris);
     display: flex;
     justify-content: space-between;
     transition: .5s;
-
     overflow: hidden;
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
@@ -97,6 +126,7 @@ header {
     margin-left: 10px;
     border: solid var(--gris) 1.5px;
     box-shadow: 0 0 0 2px black;
+    left: 5px;
 
 }
 
@@ -131,6 +161,7 @@ header {
     position: relative;  
     transition: .8s;
     transition-delay: .35s;
+    right: -10px;
 }
 
 
@@ -192,6 +223,7 @@ header {
     cursor: pointer;
 }
 
+
 .darck-theme .header-content {
     background: var(--negro);
 }
@@ -219,6 +251,10 @@ header {
 .darck-theme .userBx .imgBx {
     border: solid var(--negro) 1.5px;
     box-shadow: 0 0 0 2px rgb(255, 255, 255);
+}
+
+.darck-theme .logo {
+    color: white;
 }
 
 

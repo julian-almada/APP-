@@ -13,4 +13,6 @@ router.get("/contact", mainController.contact);
 
 router.get("/carrito", mainController.carrito);
 
+router.get("/register", mainController.register);
+
 module.exports = router;

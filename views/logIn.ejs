@@ -1,7 +1,35 @@
 <%- include("partials/header") %>
 
+
+
 <section>
-    <h1>Sign In</h1>
+    <div class="log-in">
+        <h2>Ingresa con tu usuario</h2>
+        <form action="">
+
+            <div class="input-caja">
+                <label for="email">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </label>
+                <input type="email"  placeholder="Email" name="email" required>
+            </div>
+
+            <div class="input-caja">
+                <label for="password"><ion-icon name="lock-closed-outline"></ion-icon></label>
+                    <input type="password" placeholder="Password" name="password" required>
+            </div>
+        
+
+        <a href="#">¿Olvidaste tu contraseña?</a>
+
+        <button type="submit">Ingresar</button>
+        <button>Ingrsar con GOOGLE</button>
+
+    </form>
+
+        <h3>¿Aún no tenés usuario?</h3>
+        <a href="./register" class="btn-registro">Registrarse</a>
+    </div>
 </section>
 
 <%- include("partials/footer") -%>

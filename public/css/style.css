@@ -8,7 +8,6 @@
     text-decoration: none;
     outline: none;
     border: none;
-    transition: .5s;
 }
 
 :root {
@@ -25,17 +24,19 @@
 html{
     font-size: 90%;
     overflow-x: hidden;
-
 }
 
 body{
     background: var(--gris);
     padding: 20px;
-
+    padding-top: 0;
+    padding-right: 20px;
+    transition: .5s;
 }
 
 section {
-    margin-top: 90px;
+    margin-top: 20px;
+    transition: .5s;
 }
 
 .darck-theme {

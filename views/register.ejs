@@ -1,0 +1,49 @@
+<%- include("partials/header") %>
+
+
+
+<section>
+    <div class="register">
+        <h2>Ingresa tus datos</h2>
+        <form action="">
+
+            <div class="input-caja">
+                <label for="name"><ion-icon name="person-outline"></ion-icon></label>
+                    <input type="text" placeholder="Nombre" name="name" required>
+            </div>
+
+            <div class="input-caja">
+                <label for="name"><ion-icon name="person-outline"></ion-icon></label>
+                    <input type="text" placeholder="Apellido" name="name" required>
+            </div>
+
+            <div class="input-caja">
+                <label for="email"><ion-icon name="mail-outline"></ion-icon></label>
+                    <input type="email"  placeholder="Email" name="email" required>
+            </div>
+
+            <div class="input-caja">
+                <label for="number"><ion-icon name="call-outline"></ion-icon></label>
+                    <input type="number"  placeholder="Telefono" name="number" required>
+            </div>
+
+            <div class="input-caja">
+                <label for="password"><ion-icon name="lock-closed-outline"></ion-icon></label>
+                    <input type="password" placeholder="Contraseña" name="password" required>
+            </div>
+
+            <div class="input-caja">
+                <label for="password"><ion-icon name="lock-closed-outline"></ion-icon></label>
+                    <input type="password" placeholder="Repita la contraseña" name="password" required>
+            </div>
+
+            
+
+        <button type="submit">Registrame</button>
+        <button>Ingrsar con GOOGLE</button>
+
+    </form>
+    </div>
+</section>
+
+<%- include("partials/footer") -%>

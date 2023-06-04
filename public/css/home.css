@@ -1,4 +1,76 @@
-h1 {
-    font-size: 45px;
 
+
+
+.cover{
+    margin-top: 70px;
+}
+
+.home-image {
+    display: inline-flex;
+    position: relative;
+}
+
+.home-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.home-image .tex-image1 {
+    position: absolute;
+    height: 50px;
+    width: 50%;
+    top: 110px;
+}
+
+.home-image .tex-image2 {
+    position: absolute;
+    width: 90%;
+    bottom: 10px;
+    right: 0px;
+}
+
+.home-image .tex-image1 h2 {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background: rgba(122, 121, 121, 0.479);
+    padding-left: 10px;
+    padding-right: 15px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.home-image .tex-image2 h2 {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background: rgba(122, 121, 121, 0.479);
+    padding-left: 15px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.cover-info {
+    margin-top: 20px;
+}
+
+.cover-info .info {
+    margin-top: 10px;
+    padding: 5px;
+    padding-bottom: 8px;
+    display: flex;
+    border-bottom: solid 1px gray;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cover-info .info img {
+    color: white;
+}
+
+.cover-info .info span {
+    color: black;
+    font-size: 50px;
+    transition: 2.5s;
+}
+
+.darck-theme .info span {
+    color: white;
 }

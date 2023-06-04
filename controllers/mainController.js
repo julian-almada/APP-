@@ -19,6 +19,10 @@ const controller = {
     return res.render("carrito");
   },
 
+  register: (req, res) => {
+    return res.render("register");
+  },
+
   404: (req, res) => {
     return res.render("404");
   }
