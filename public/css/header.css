@@ -201,7 +201,6 @@ header {
     align-items: center;
 }
 
-
 .menu li {
     list-style: none;
     align-items: center;
@@ -218,11 +217,9 @@ header {
 
 }
 
-
 .theme{
     cursor: pointer;
 }
-
 
 .darck-theme .header-content {
     background: var(--negro);
@@ -256,15 +253,3 @@ header {
 .darck-theme .logo {
     color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
