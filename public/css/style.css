@@ -43,3 +43,13 @@ section {
     background: var(--negro);
     color: white;
 }
+
+button {
+    cursor: pointer;
+    transition: .5s;
+}
+
+input {
+    cursor: pointer;
+    transition: .5s;
+}
