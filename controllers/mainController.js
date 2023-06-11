@@ -23,6 +23,10 @@ const controller = {
     return res.render("register");
   },
 
+  producDetail: (req, res) => {
+    return res.render("producDetail");
+  },
+
   404: (req, res) => {
     return res.render("404");
   }

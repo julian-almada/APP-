@@ -35,7 +35,7 @@ body{
 }
 
 section {
-    margin-top: 20px;
+    margin-top: 90px;
     transition: .5s;
 }
 
@@ -47,11 +47,26 @@ section {
 button {
     cursor: pointer;
     transition: .5s;
+    font-size: 20px;
+    margin: 10px 0;
+    border: solid 1.5px black;
+    padding: 5px;
 }
 
 input {
     cursor: pointer;
     transition: .5s;
+}
+
+.darck-theme  input {
+    background: rgb(20, 20, 20);
+    color: white;
+}
+
+.darck-theme button {
+    color: white;
+    background: rgb(20, 20, 20);
+    border: solid 1px white;
 }
 
 /* tengo que poner algo para pushear y que git me marque en verde que estuve trabajando */

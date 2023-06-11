@@ -10,8 +10,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     flex: 1 1 30rem;
-    padding-top: 20px;
-    margin-top: 70px;
 }
 
 .log-in h2 {
@@ -59,10 +57,7 @@
 
 .log-in button {
     width: 100%;
-    font-size: 20px;
-    padding: 5px;
     margin-bottom: 10px;
-    border: solid 1px black;
 }
 
 .log-in h3 {
@@ -114,8 +109,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     flex: 1 1 30rem;
-    padding-top: 20px;
-    margin-top: 70px;
 }
 
 .register h2 {
@@ -154,10 +147,7 @@
 
 .register button {
     width: 100%;
-    font-size: 20px;
-    padding: 5px;
     margin-bottom: 10px;
-    border: solid 1px black;
 }
 
 .darck-theme .register .input-caja input {

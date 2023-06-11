@@ -1,0 +1,90 @@
+.carrito {
+    margin-top: 55px;
+}
+
+.producto {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: solid 1px black;
+}
+
+.producto:not(:first-of-type) {
+    margin-top: 10px;
+}
+
+.producto img {
+    height: 100px;
+    width: 100px;
+    border: solid 1px black;
+}
+
+.producto .detalle-producto {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    object-fit: cover;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.producto .detalle-producto h3 {
+    position: relative;
+    top: 0;
+    margin: 0;
+}
+
+.producto .detalle-producto .precio-opcional {
+    display: flex;
+    width: 100%;
+    position: relative;
+    height: 32px;   
+    bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.producto .detalle-producto .precio-opcional input {
+    height: 30px;
+    width: 60px;
+    border: solid 1px black;
+    margin: 0;
+}
+
+.darck-theme .producto .detalle-producto .precio-opcional input{
+    border: solid 1px white;
+}
+
+.producto .detalle-producto .precio-opcional h2 {
+    font-size: 20px;
+}
+
+.producto .detalle-producto .precio-opcional .delete {
+    border: none;
+}
+
+.compra {
+    display: flex;
+    flex-direction: column;
+}
+
+.compra h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.compra h4 {
+    font-size: 19px;
+    margin: 0;
+}
+
+.compra .precio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.compra .precio h2 {
+    font-size: 25px;
+    margin-top: 10px;
+}
