@@ -1,0 +1,7 @@
+viwes faltantes por hacer:
+cuenta
+about
+contact
+
+
+crear un div en vez de img que cargue imagenes cuando las haya y si no las hay que cargue: <ion-icon name="image-outline"></ion-icon>
