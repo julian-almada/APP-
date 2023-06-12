@@ -5,3 +5,5 @@ contact
 
 
 crear un div en vez de img que cargue imagenes cuando las haya y si no las hay que cargue: <ion-icon name="image-outline"></ion-icon>
+
+hacer que la app sea responsive
