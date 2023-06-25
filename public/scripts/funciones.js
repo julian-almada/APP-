@@ -20,6 +20,16 @@ const productos = [
     precio: 10000,
   },
   {
+    id: "gorra-01",
+    titulo: "Gorra",
+    imagen: "img/gorra.jpg",
+    categoria: {
+      nombre: "Gorras",
+      id: "gorras",
+    },
+    precio: 7000,
+  },
+  {
     id: "pantalon-01",
     titulo: "Pantalon buenaso",
     imagen: "img/pantalon.jpg",
@@ -33,6 +43,16 @@ const productos = [
     id: "remera-01",
     titulo: "Remera facha",
     imagen: "img/remera1.jpg",
+    categoria: {
+      nombre: "Remeras",
+      id: "remeras",
+    },
+    precio: 8000,
+  },
+  {
+    id: "remera-01",
+    titulo: "Remera facha",
+    imagen: "img/remera.png",
     categoria: {
       nombre: "Remeras",
       id: "remeras",
@@ -58,6 +78,26 @@ const productos = [
       id: "gorras",
     },
     precio: 7000,
+  },
+  {
+    id: "sapatillas-01",
+    titulo: "Jordan papá",
+    imagen: "img/jordan.jpg",
+    categoria: {
+      nombre: "Sapatillas",
+      id: "zapatillas",
+    },
+    precio: 30000,
+  },
+  {
+    id: "buzo-01",
+    titulo: "Buzo facherito",
+    imagen: "img/buzo.jpg",
+    categoria: {
+      nombre: "Buzos",
+      id: "buzos",
+    },
+    precio: 10000,
   },
 ];
 
