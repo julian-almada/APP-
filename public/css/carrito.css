@@ -46,6 +46,7 @@
 }
 
 .producto .detalle-producto .precio-opcional input {
+    background: rgb(240, 237, 237);
     height: 30px;
     width: 60px;
     border: solid 1px black;
@@ -54,6 +55,7 @@
 
 .darck-theme .producto .detalle-producto .precio-opcional input{
     border: solid 1px white;
+    background: rgb(20, 20, 20);
 }
 
 .producto .detalle-producto .precio-opcional h2 {
@@ -88,3 +90,11 @@
     font-size: 25px;
     margin-top: 10px;
 }
+
+.carrito-vasio,
+.carrito-comprado {
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+

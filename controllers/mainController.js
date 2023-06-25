@@ -27,6 +27,10 @@ const controller = {
     return res.render("producDetail");
   },
 
+  productos: (req, res) => {
+    return res.render("productos");
+  },
+
   404: (req, res) => {
     return res.render("404");
   }

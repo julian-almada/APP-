@@ -1,3 +1,64 @@
-footer h1 {
-    font-size: 45px;
+.footer {
+    background: rgba(34, 33, 33, 0.205);
+    position: fixed;
+    z-index: -3;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
 }
+
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 10px 0;
+}
+
+.footer-contact a {
+    font-size: 35px;
+    color: black;
+}
+
+.darck-theme .footer-contact a {
+    color: white;
+}
+
+.footer-info {
+    width: 100%;
+    padding: auto;
+    margin: 20px 0;
+}
+
+.footer-info a {
+    color: black;
+    margin: 5px;
+    padding: 0 5px;
+}
+
+.footer-info a:not(:first-of-type) {
+    border-left: solid 1px black;
+}
+
+.darck-theme .footer-info a {
+    color: white;
+    margin: 5px;
+    padding: 0 5px;
+}
+
+.darck-theme .footer-info a:not(:first-of-type) {
+    border-left: solid 1px white;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+.julian {
+    color: black;
+    text-decoration: underline;
+}
+

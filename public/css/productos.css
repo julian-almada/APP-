@@ -1,0 +1,137 @@
+.section-productos{
+    margin-top: 45px;
+}
+
+.categorias-nav{
+    flex-direction: colum;
+    transition: .5s;
+    width: 55%;
+    height: 28px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.active-categorias {
+    height: 250px;
+    z-index: 1000;
+}
+
+.categorias-nav h2 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.categorias-nav .categorias-lista {
+    border-left: solid 1px gray;
+    margin-left: 10px;
+    margin-top: 8px;
+    padding-left: 20px;
+    position: relative;
+    transition: .5s;
+}
+
+.categorias-nav .categorias-lista li {
+    list-style: none;
+    margin: 2px 0;
+    padding: 2px 0;
+}
+
+.categorias-nav .categorias-lista li .boton-categoria {
+    width: 100%;
+    padding: 2px 0;
+    margin: 5px 0;
+}
+
+/*-----------------PRODUCTOS-----------------*/
+
+.todos-productos {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.contenedor-productos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    flex-flow: wrap;
+    align-items: center;
+}
+
+.producto-producto{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    border-radius: 15px;
+    padding: 5px;
+    width: 49%;
+    height: 50%;
+    max-height: 380px;
+}
+
+.producto-imagen {
+    border-radius: 5px;
+}
+
+.producto-imagen img {
+    width: 100%;
+    max-height: 180px;
+    border-radius: 12px;
+}
+
+.nombre-producto {
+    font-size: 18px;
+    margin: 0;
+}
+
+.precio-producto {
+    font-size: 20px;
+    margin: 0;
+}
+
+
+
+
+/*.categorias {
+    position: relative;
+    height: 30px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .5s;
+    overflow: hidden;
+    z-index: 2000;
+}
+
+.categorias-activo {
+    height: 280px;
+    
+}
+
+.categorias .categorias-lista {
+    border-left: solid 1px gray;
+    margin-left: 10px;
+    padding-left: 20px;
+    position: relative;
+    transition: .5s;
+}
+
+.categorias .categorias-lista li {
+    margin: 0;
+}
+
+.categorias .categorias-lista li a {
+    font-size: 18px;
+    padding: 5px 5px;
+}
+
+
+}*/
+
+.categoria-elegida {
+    text-decoration: underline;
+}

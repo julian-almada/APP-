@@ -3,54 +3,65 @@
 <%- include("partials/header") %>
 
 <section class="carrito">
-    <div class="producto">
-        <img src="" alt="imagen">
+    <div class="contenedor-carrito">
+        <h2>Tu carrito de compras</h2>
+        <p class="carrito-vasio">Tu carrito está vasío. <ion-icon name="sad-outline"></ion-icon></p>
 
-        <div class="detalle-producto">
-            <h3>Nombre y detalle del producto.</h3>
-            <div class="precio-opcional">
-                <input type="number">
-                <h2>$0.000,00</h2>
-                <button class="delete"><ion-icon name="trash-outline"></ion-icon></button>
+    <div class="carrito-productos disabled">
+
+        <div class="producto">
+            <img src="" alt="imagen">
+    
+            <div class="detalle-producto">
+                <h3>Nombre y detalle del producto.</h3>
+                <div class="precio-opcional">
+                    <input type="number">
+                    <h2>$0.000,00</h2>
+                    <button class="delete"><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="producto">
+            <img src="" alt="imagen">
+    
+            <div class="detalle-producto">
+                <h3>Nombre y detalle del producto.</h3>
+                <div class="precio-opcional">
+                    <input type="number">
+                    <h2>$0.000,00</h2>
+                    <button class="delete"><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="producto">
+            <img src="" alt="imagen">
+    
+            <div class="detalle-producto">
+                <h3>Nombre y detalle del producto.</h3>
+                <div class="precio-opcional">
+                    <input type="number">
+                    <h2>$0.000,00</h2>
+                    <button class="delete"><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="producto">
-        <img src="" alt="imagen">
-
-        <div class="detalle-producto">
-            <h3>Nombre y detalle del producto.</h3>
-            <div class="precio-opcional">
-                <input type="number">
-                <h2>$0.000,00</h2>
-                <button class="delete"><ion-icon name="trash-outline"></ion-icon></button>
-            </div>
-        </div>
-    </div>
-
-    <div class="producto">
-        <img src="" alt="imagen">
-
-        <div class="detalle-producto">
-            <h3>Nombre y detalle del producto.</h3>
-            <div class="precio-opcional">
-                <input type="number">
-                <h2>$0.000,00</h2>
-                <button class="delete"><ion-icon name="trash-outline"></ion-icon></button>
-            </div>
-        </div>
-    </div>
-
-    <div class="compra">
+    <div class="compra disabled">
         <h3>Envio: Dirección del comprador.</h3>
         <h4>Dato adicional del comprador</h4>
         <div class="precio">
             <h2>Total con envío:</h2>
-            <h2>$0.000,00</h2>
+            <h2 id="total">$0.000,00</h2>
         </div>
         <button>Continuar compra</button>
+        <button>Vaciar carrito</button>
     </div>
+    </div>
+    <p class="carrito-comprado disabled">Gracias por tu compra! <ion-icon name="happy-outline"></ion-icon></p>
+    
 </section>
 
 <%- include("partials/footer") -%>

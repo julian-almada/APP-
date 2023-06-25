@@ -24,17 +24,23 @@
 html{
     font-size: 90%;
     overflow-x: hidden;
+    background: var(--gris);
 }
 
 body{
     background: var(--gris);
-    padding: 20px;
     padding-top: 0;
-    padding-right: 20px;
     transition: .5s;
+    margin-bottom: 277px;
+    padding: 20px;
+}
+
+.darck-theme body {
+    background: var(--negro);
 }
 
 section {
+    background: var(--gris);
     margin-top: 90px;
     transition: .5s;
 }
@@ -42,6 +48,10 @@ section {
 .darck-theme {
     background: var(--negro);
     color: white;
+}
+
+.darck-theme section {
+    background: var(--negro);
 }
 
 button {
@@ -69,4 +79,7 @@ input {
     border: solid 1px white;
 }
 
+.darck-theme a {
+    color: white;
+}
 /* tengo que poner algo para pushear y que git me marque en verde que estuve trabajando */

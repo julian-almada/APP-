@@ -40,7 +40,7 @@ header {
 
 .logo {
     width: 60px;
-    height: 60px;
+    height: 40px;
     color: black;
     display: flex;
     transition: 2.5s;
@@ -66,7 +66,7 @@ header {
 .logo .store{
     position: absolute;
     font-size: 15px;
-    top: 27px;
+    top: 7px;
     left: 35px;
 }
 
@@ -92,9 +92,13 @@ header {
 
 .active__navigation {
     width: 300px;
-    height: 480px;
+    height: 460px;
     z-index: 2000;
     background: var(--gris2);
+}
+
+.navigation-mas-grande {
+    height: 670px;
 }
 
 .navigation .userBx {
@@ -197,7 +201,7 @@ header {
     width: 240px;
     height: calc(100% -60px);
     margin-top: 60px;
-    padding: 20px;
+    padding: 15px;
     align-items: center;
 }
 
@@ -205,17 +209,62 @@ header {
     list-style: none;
     align-items: center;
     justify-content: center;
+    margin: 10px;
 }
 
 .menu li a {
     display: flex;
     align-items: center;
-    margin: 20px 0;
     font-size: 1.5rem;
-    gap: 10px;
+    gap: 5px;
     color: black;
-
+    transition: .5s;
 }
+
+
+
+/*-------------- BOTON DE CATEGORIAS --------------*/
+
+.categorias {
+    position: relative;
+    height: 30px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.categorias-activo {
+    height: 280px;
+    
+}
+
+.categorias .categorias-lista {
+    border-left: solid 1px gray;
+    margin-left: 10px;
+    padding-left: 20px;
+    position: relative;
+    transition: .5s;
+}
+
+.categorias .categorias-lista li {
+    margin: 0;
+}
+
+.categorias .categorias-lista li a {
+    font-size: 18px;
+    padding: 5px 5px;
+}
+
+.categoria-elegida {
+    text-decoration: underline;
+}
+
+
+/*-------------- TEMA OSCURO/CLARO----------------*/
+
 
 .theme{
     cursor: pointer;

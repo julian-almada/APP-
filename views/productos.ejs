@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="css/productos.css">
+
+<%- include("partials/header") %>
+
+<section class="section-productos">
+
+    <div class="categorias-nav">
+        <h2 class="boton-categorias-nav"><ion-icon name="add-circle-outline"></ion-icon> Categorias</h2>
+        <ul class="categorias-lista">
+            <li>
+                <buttton id="todos" class="boton-categoria">Todos los productos</buttton>
+            </li>
+            <li>
+                <buttton id="camperas" class="boton-categoria">Camperas</buttton>
+            </li>
+            <li>
+                <buttton id="buzos" class="boton-categoria">Buzos</buttton>
+            </li>
+            <li>
+                <buttton id="remeras" class="boton-categoria">Remeras</buttton>
+            </li>
+            <li>
+                <buttton id="pantalones" class="boton-categoria">Pantalones</buttton>
+            </li>
+            <li>
+                <buttton id="zapatillas" class="boton-categoria">Zapatillas</buttton>
+            </li>
+            <li>
+                <buttton id="gorras" class="boton-categoria">Gorras</buttton>
+            </li>
+        </ul>
+    </div>
+
+    <div class="contenedor-productos" id="contenedor-productos"></div>
+</section>
+
+<%- include("partials/footer") -%>
