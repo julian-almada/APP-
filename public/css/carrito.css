@@ -98,3 +98,6 @@
     justify-content: center;
 }
 
+.disabled {
+    display: none;
+}

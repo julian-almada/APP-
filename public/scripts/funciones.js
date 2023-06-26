@@ -50,7 +50,7 @@ const productos = [
     precio: 8000,
   },
   {
-    id: "remera-01",
+    id: "remera-02",
     titulo: "Remera facha",
     imagen: "img/remera.png",
     categoria: {
@@ -70,7 +70,7 @@ const productos = [
     precio: 30000,
   },
   {
-    id: "gorra-01",
+    id: "gorra-02",
     titulo: "Gorra",
     imagen: "img/gorra1.jpg",
     categoria: {
@@ -80,7 +80,7 @@ const productos = [
     precio: 7000,
   },
   {
-    id: "sapatillas-01",
+    id: "sapatillas-02",
     titulo: "Jordan papá",
     imagen: "img/jordan.jpg",
     categoria: {
@@ -90,7 +90,7 @@ const productos = [
     precio: 30000,
   },
   {
-    id: "buzo-01",
+    id: "buzo-02",
     titulo: "Buzo facherito",
     imagen: "img/buzo.jpg",
     categoria: {
@@ -105,6 +105,8 @@ const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const botonTodos = document.querySelector("#todos");
 const titulo = document.querySelector('#titulo-principal');
+let botonesAgregar = document.querySelectorAll('.boton-agregar');
+const numerito = document.querySelector('#numerito');
 
 function cargarProductos(productosElegidos) {
 
@@ -123,6 +125,8 @@ function cargarProductos(productosElegidos) {
 
     contenedorProductos.append(div);
   });
+
+  actualizarBotonesAgregar();
 }
 
 cargarProductos(productos);
@@ -155,4 +159,35 @@ botonesCategorias.forEach(boton => {
   });
 });
 
+function actualizarBotonesAgregar() {
+  botonesAgregar = document.querySelectorAll('.boton-agregar');
 
+  botonesAgregar.forEach(boton => {
+    boton.addEventListener('click', agregarAlCarrito);
+  });
+}
+
+const productosAgregados = [];
+
+function agregarAlCarrito(e) {
+    const idBoton = e.target.id;
+    const productoAgregado = productos.find(producto => producto.id === idBoton);
+
+    if (productosAgregados.some(producto => producto.id === idBoton)) {
+      const index = productosAgregados.findIndex(producto => producto.id === idBoton);
+      productosAgregados[index].cantidad++;
+    } else {
+      productoAgregado.cantidad = 1;
+    productosAgregados.push(productoAgregado);
+    }
+
+    actualizarNumerito();
+
+    localStorage.setItem("productos-agregados-al-carrito", JSON.stringify(productosAgregados));
+    
+}
+
+function actualizarNumerito() {
+  let nuevoNumerito = productosAgregados.reduce((acc, producto) => acc + producto.cantidad, 0);
+  numerito.innerText = nuevoNumerito;
+}
