@@ -137,16 +137,16 @@ botonesCategorias.forEach(boton => {
     botonesCategorias.forEach(boton =>
       boton.classList.remove("categoria-elegida")
     );
-    e.target.classList.add("categoria-elegida");
+    e.currentTarget.classList.add("categoria-elegida");
 
-    if (e.target.id != "todos") {
+    if (e.currentTarget.id != "todos") {
 
       titulo.innerText = "Todos los productos";
-      const tituloCategoria = productos.find(producto => producto.categoria.id === e.target.id);
+      const tituloCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id);
       titulo.innerText = tituloCategoria.categoria.nombre;
 
       const categoriaElegida = productos.filter(
-        (producto) => producto.categoria.id === e.target.id
+        (producto) => producto.categoria.id === e.currentTarget.id
       );
   
       cargarProductos(categoriaElegida);
@@ -167,10 +167,18 @@ function actualizarBotonesAgregar() {
   });
 }
 
-const productosAgregados = [];
+let productosAgregados;
+
+let productosEnCarritoLS = localStorage.getItem("productos-agregados-al-carrito");
+if (productosEnCarritoLS) {
+  productosAgregados = JSON.parse(productosEnCarritoLS);
+  actualizarNumerito();
+} else {
+  productosAgregados = [];
+}
 
 function agregarAlCarrito(e) {
-    const idBoton = e.target.id;
+    const idBoton = e.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idBoton);
 
     if (productosAgregados.some(producto => producto.id === idBoton)) {
