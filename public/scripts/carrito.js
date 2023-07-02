@@ -78,6 +78,22 @@ function actualizarBotonesEliminar() {
 }
 
 function eliminarDelCarrito(e) {
+
+  Toastify({
+    text: "Producto eliminado",
+    duration: 3000,
+    gravity: "top", // `top` or `bottom`
+    position: "left", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: "linear-gradient(to right, rgb(240, 237, 237), rgba(201, 195, 195, 0.863))",
+      borderRadius: "10px",
+      color: "black",
+      padding: "8px"
+    },
+    onClick: function(){} // Callback after click
+  }).showToast();
+
   const idBoton = e.currentTarget.id;
   const index = productosEnCarrito.findIndex(
     producto => producto.id === idBoton
