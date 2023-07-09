@@ -12,11 +12,12 @@
 
 :root {
     /*ligth*/
-    --turquesa: #6cf3d5;
-    --verde: #21a3a3;
     --gris: rgb(240, 237, 237);
     --gris2: rgba(201, 195, 195, 0.863);
     --degradado: linear-gradient(180deg, var(--gris), rgba(218, 217, 217, 0));
+    --verde: #0c443a;
+    --celeste: #25d1b2;
+    --degradado2: linear-gradient(90deg, var(--celeste), var(--verde));
     /*nigth*/
     --negro: rgb(20, 20, 20);
 }
@@ -56,11 +57,13 @@ section {
 
 button {
     cursor: pointer;
+    color: black;
     transition: .5s;
     font-size: 20px;
     margin: 10px 0;
-    border: solid 1.5px black;
+    border: solid 1.5px var(--verde);
     padding: 5px;
+    border-radius: 10px;
 }
 
 input {
@@ -76,7 +79,7 @@ input {
 .darck-theme button {
     color: white;
     background: rgb(20, 20, 20);
-    border: solid 1px white;
+    border: solid 1px var(--verde);
 }
 
 .darck-theme a {

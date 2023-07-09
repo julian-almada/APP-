@@ -26,9 +26,10 @@ function cargarProductos(productosElegidos) {
     div.classList.add("producto-producto");
     div.innerHTML = `
         
-        <div class="producto-imagen"><img src="${producto.imagen}" alt="${producto.titulo}"></div>
-        <h2 class="nombre-producto">${producto.titulo}</h2>
-        <h3 class="precio-producto">$ ${producto.precio}</h3>
+          <div class="producto-imagen"><img src="${producto.imagen}" alt="${producto.titulo}"></div>
+          <h2 class="nombre-producto">${producto.titulo}</h2>
+          <h3 class="precio-producto">$ ${producto.precio}</h3>
+
         <button class="boton-agregar" id="${producto.id}">Agregar</button>`;
 
     contenedorProductos.append(div);
@@ -36,6 +37,7 @@ function cargarProductos(productosElegidos) {
 
   actualizarBotonesAgregar();
 }
+
 
 cargarProductos(productos);
 
@@ -93,7 +95,7 @@ function agregarAlCarrito(e) {
     position: "left", // `left`, `center` or `right`
     stopOnFocus: true, // Prevents dismissing of toast on hover
     style: {
-      background: "linear-gradient(to right, rgb(240, 237, 237), rgba(201, 195, 195, 0.863))",
+      background: "linear-gradient(to right, #25d1b2, rgba(201, 195, 195, 0.863))",
       borderRadius: "10px",
       color: "black",
       padding: "8px"
@@ -122,3 +124,15 @@ function actualizarNumerito() {
   let nuevoNumerito = productosAgregados.reduce((acc, producto) => acc + producto.cantidad, 0);
   numerito.innerText = nuevoNumerito;
 }
+
+/*
+function actualizarBotonesAgregar() {
+  botonesAgregar = document.querySelectorAll('.boton-agregar');
+
+  botonesAgregar.forEach(boton => {
+    boton.addEventListener('click', agregarAlCarrito);
+  });
+}
+*/
+
+

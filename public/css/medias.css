@@ -1,0 +1,104 @@
+@media(min-width:768px) {
+    body{
+        padding: 20px 40px;
+    }
+
+    header .header-content{
+        display: none;
+    }
+
+    .header-pantalla-grande {
+        display: flex;
+        margin-right: 40px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-pantalla-grande .menu-nav {
+        display: flex;
+        justify-content: center;
+        transition: .5s;
+    }
+
+    .header-pantalla-grande .menu-nav a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-size: 20px;
+        margin: 0 6px;
+        transition: .5s;
+    }
+
+    .header-pantalla-grande .menu-nav a ion-icon {
+        color: var(--verde);
+    }
+
+    .darck-theme .header-pantalla-grande .menu-nav a {
+        color: white;
+    }
+
+    .darck-theme .header-pantalla-grande .menu-nav a ion-icon {
+        color: var(--celeste);
+    }
+
+    .header-pantalla-grande .menu-nav a:hover {
+        text-decoration: underline var(--verde);
+        transition: .5s;
+    }
+
+    .darck-theme .header-pantalla-grande .menu-nav a:hover {
+        text-decoration: underline var(--celeste);
+    }
+
+    .footer {
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer .footer-contact {
+        width: 500px;
+    }
+
+    .footer .footer-info {
+        width: 950px;
+    }
+
+    .footer a:hover,
+    .footer .footer-contact a:hover,
+    .footer .footer-info a:hover {
+        color: var(--celeste);
+    }
+
+    .contenedor-productos{
+        gap: 2.3%;
+    }
+
+    .contenedor-productos .producto-producto {
+        width: 18%;
+        
+    }
+
+    .cover-info {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .cover-info .info {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .cover-info .alverre {
+        flex-direction: column-reverse;
+    }
+
+    .cover-info .info:not(:first-of-type) {
+        border-left: solid 1px black;
+    }
+
+}

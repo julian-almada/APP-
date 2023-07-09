@@ -1,7 +1,8 @@
 :root {
     /*ligth*/
-    --turquesa: #6cf3d5;
-    --verde: #21a3a3;
+    --verde: #0c443a;
+    --celeste: #25d1b2;
+    --degradado2: linear-gradient(90deg, var(--celeste), var(--verde));
     --gris: rgb(240, 237, 237);
     --gris1: rgba(240, 237, 237, 0.767);
     --gris2: rgba(207, 205, 205, 0.849);
@@ -129,7 +130,7 @@ header {
     transition-delay: .35s;
     margin-left: 10px;
     border: solid var(--gris) 1.5px;
-    box-shadow: 0 0 0 2px black;
+    box-shadow: 0 0 0 2px var(--verde);
     left: 5px;
 
 }
@@ -148,9 +149,14 @@ header {
     position: relative;
     white-space: nowrap;
     color: black;
+    text-decoration: underline var(--verde);
     font-size: 1.4em;
     margin-left: 63px;
     transition: .5s;
+}
+
+.darck-theme .navigation .userBx p {
+    text-decoration: underline var(--celeste);
 }
 
 
@@ -173,7 +179,7 @@ header {
     display: block;
     width: 100%;
     height: 2px;
-    background: black;
+    background: var(--verde);
     margin-top: 6px;
     transform-origin: 0px 100%;
     transition: all 600ms;
@@ -221,6 +227,14 @@ header {
     transition: .5s;
 }
 
+.menu li a ion-icon {
+    color: var(--verde);
+}
+
+.darck-theme .menu li a ion-icon {
+    color: var(--celeste);
+}
+
 
 
 /*-------------- BOTON DE CATEGORIAS --------------*/
@@ -242,7 +256,7 @@ header {
 }
 
 .categorias .categorias-lista {
-    border-left: solid 1px gray;
+    border-left: solid 1px var(--celeste);
     margin-left: 10px;
     padding-left: 20px;
     position: relative;
@@ -296,9 +310,13 @@ header {
 
 .darck-theme .userBx .imgBx {
     border: solid var(--negro) 1.5px;
-    box-shadow: 0 0 0 2px rgb(255, 255, 255);
+    box-shadow: 0 0 0 2px var(--celeste);
 }
 
 .darck-theme .logo {
     color: white;
+}
+
+.header-pantalla-grande {
+    display: none;
 }

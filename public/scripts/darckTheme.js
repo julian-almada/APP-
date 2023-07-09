@@ -1,4 +1,5 @@
 const theme = document.querySelector('.theme');
+const theme2 = document.querySelector('.theme2');
 
 const html = document.querySelector('html');
 const getMode = localStorage.getItem('mode');
@@ -9,6 +10,17 @@ if (getMode && getMode === 'darck') {
 }
 
 theme.addEventListener('click', () => {
+    console.log('clik in theme');
+    html.classList.toggle('darck-theme');
+
+    if(!html.classList.contains('darck-theme')){
+        return localStorage.setItem('mode', 'ligth');
+    }else {
+        return localStorage.setItem('mode', 'darck');
+    }
+});
+
+theme2.addEventListener('click', () => {
     console.log('clik in theme');
     html.classList.toggle('darck-theme');
 
