@@ -29,14 +29,39 @@ function cargarProductos(productosElegidos) {
           <div class="producto-imagen"><img src="${producto.imagen}" alt="${producto.titulo}"></div>
           <h2 class="nombre-producto">${producto.titulo}</h2>
           <h3 class="precio-producto">$ ${producto.precio}</h3>
+        <div class="botones">
+        <button class="boton-ver" data-id="${producto.id}">Ver</button>
+        <button class="boton-agregar" id="${producto.id}">Agregar</button>
+        </div>
+        
 
-        <button class="boton-agregar" id="${producto.id}">Agregar</button>`;
+        `;
+
+        const botonVer = div.querySelector(".boton-ver");
+        botonVer.addEventListener("click", mostrarDetalleProducto);
 
     contenedorProductos.append(div);
   });
 
   actualizarBotonesAgregar();
 }
+
+function mostrarDetalleProducto(event) {
+  const productoId = event.target.dataset.id;
+  const producto = productos.find(p => p.id === productoId);
+
+  if (producto) {
+    // Generar la URL de la página de detalles del producto
+    const urlDetalleProducto = `detalle_producto?id=${productoId}`;
+
+    // Redireccionar al usuario a la página de detalles del producto
+    window.location.href = urlDetalleProducto;
+  } else {
+    alert("El producto no pudo ser encontrado.");
+  }
+}
+
+
 
 
 cargarProductos(productos);
@@ -91,22 +116,25 @@ function agregarAlCarrito(e) {
   Toastify({
     text: "Producto agregado",
     duration: 3000,
-    gravity: "top", // `top` or `bottom`
-    position: "left", // `left`, `center` or `right`
-    stopOnFocus: true, // Prevents dismissing of toast on hover
+    gravity: "top",
+    position: "left",
+    stopOnFocus: true,
     style: {
       background: "linear-gradient(to right, #25d1b2, rgba(201, 195, 195, 0.863))",
       borderRadius: "10px",
       color: "black",
       padding: "8px"
     },
-    onClick: function(){} // Callback after click
+    onClick: function(){}
   }).showToast();
 
     const idBoton = e.currentTarget.id;
+
     const productoAgregado = productos.find(producto => producto.id === idBoton);
+    
 
     if (productosAgregados.some(producto => producto.id === idBoton)) {
+ 
       const index = productosAgregados.findIndex(producto => producto.id === idBoton);
       productosAgregados[index].cantidad++;
     } else {
@@ -125,14 +153,8 @@ function actualizarNumerito() {
   numerito.innerText = nuevoNumerito;
 }
 
-/*
-function actualizarBotonesAgregar() {
-  botonesAgregar = document.querySelectorAll('.boton-agregar');
 
-  botonesAgregar.forEach(boton => {
-    boton.addEventListener('click', agregarAlCarrito);
-  });
-}
-*/
+
+
 
 

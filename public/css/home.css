@@ -118,16 +118,22 @@
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
-    background: var(--verde);
+
 }
 
 .texto-marquesina {
+    font-size: 25px;
   display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  color: var(--celeste);
+  box-shadow: var(--celeste) 3px ;
 }
 
 .texto-marquesina span {
-    color: var(--celeste);
-    background: black;
+    font-size: 25px;
+    font-family: 'Bungee Outline';
+    color: black;
+
     padding: 0 20px;
     margin: 0 20px;
 }

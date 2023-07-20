@@ -25,6 +25,7 @@ router.get("/carrito", mainController.carrito);
 router.get("/register", validateCreateForm, mainController.register);
 
 router.get("/productDetail", mainController.producDetail);
+router.get("/detalle_producto", mainController.detalle_producto);
 
 router.get("/productos", mainController.productos);
 

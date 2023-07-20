@@ -27,6 +27,10 @@ const controller = {
     return res.render("producDetail");
   },
 
+  detalle_producto: (req, res) => {
+    return res.render("detalle_producto");
+  },
+
   productos: (req, res) => {
     return res.render("productos");
   },

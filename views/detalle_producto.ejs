@@ -1,0 +1,36 @@
+<%- include("partials/header") %>
+  <section class="productDetail">
+    <div class="imagenes-producto">
+        
+    </div>
+
+
+    <div class="product-detail">
+        <h3 id="nombre-producto"></h3>
+        <h2 id="precio-producto"></h2>
+
+        <div class="opcional">
+            <label for="detalle1">Detalle</label>
+            <input type="number" name="detalle1">
+        </div>
+
+        <div class="opcional">
+            <label for="detalle2">Detalle</label>
+            <input type="text" name="detalle2">
+        </div>
+
+        <button class="product-btn">Añadir al carrito</button>
+        <button class="product-btn">Comprar ahora</button>
+
+        <p>Descripción completa del producto e informacion adicional.
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ratione necessitatibus natus veritatis similique unde id reprehenderit maxime repellat! Illum veniam cupiditate quidem, iure aspernatur quasi laudantium qui minus mollitia.
+        </p>
+    </div>
+</section>
+ 
+
+  <script src="/scripts/detalleProducto.js"></script>
+
+  <%- include("partials/footer") -%>

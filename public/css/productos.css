@@ -59,10 +59,7 @@
 
 /*-----------------PRODUCTOS-----------------*/
 
-.todos-productos {
 
-
-}
 
 .contenedor-productos{
     padding: 0;
@@ -118,4 +115,19 @@
 
 .darck-theme .producto-producto {
     background: linear-gradient(var(--negro), #172b273a);
+}
+
+.botones {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.botones .boton-ver {
+    width: 38%;
+}
+
+.botones .boton-agregar {
+    width: 60%;
 }
