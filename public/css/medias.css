@@ -101,4 +101,67 @@
         border-left: solid 1px black;
     }
 
+    .productDetail {
+        padding: 0;
+        height: 600px;
+    }
+
+    .detalle-producto {
+        display: flex;
+        justify-content: space-between;
+        /*border: solid 1px blue;*/
+    }
+
+    .detalle-producto .carousel-container {
+        width: 50%;
+        height: 1000px;
+        /*border: solid 1px red;*/
+    }
+
+    .detalle-producto .descripcion-y-detalle {
+        width: 45%;
+        height: 100%;
+        /*border: solid 1px green;*/
+    }
+
+    .descripcion-y-detalle {
+        padding: 0;
+        align-items: start;
+    }
+
+    .descripcion-y-detalle .nombre-producto {
+        font-size: 40px;
+        margin: 0 0 15px 0;
+    }
+
+    .descripcion-y-detalle .precio-producto {
+        font-size: 35px;
+    }
+
+    .descripcion-cuotas {
+        color: green;
+        font-size: 15px;
+    }
+
+    .info-extra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .info-extra .garantias {
+        height: 100%;
+        width: 48%;
+    }
+
+    .info-extra .garantias .garantia {
+        height: 80px;
+    }
+
+    .info-extra .medios_de_pago {
+        height: 100%;
+        width: 48%;
+        justify-content: end;
+    }
+
 }

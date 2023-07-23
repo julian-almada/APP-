@@ -51,10 +51,7 @@ function mostrarDetalleProducto(event) {
   const producto = productos.find(p => p.id === productoId);
 
   if (producto) {
-    // Generar la URL de la página de detalles del producto
     const urlDetalleProducto = `detalle_producto?id=${productoId}`;
-
-    // Redireccionar al usuario a la página de detalles del producto
     window.location.href = urlDetalleProducto;
   } else {
     alert("El producto no pudo ser encontrado.");

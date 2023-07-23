@@ -8,8 +8,13 @@
         "id": "camperas"
       },
       "precio": 15000,
+      "cuotas": 12,
+      "precioCuotas": 1600,
+      "envioGratis": true,
+      "envioPrecio": 0,
       "tallas": ["S", "M", "L", "XL"],
-    "colores": ["Rojo", "Azul", "Verde"]
+      "colores": ["Rojo", "Azul", "Verde"],
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab ullam aperiam eum dolorum vitae dolor fugit? Quisquam nesciunt fugiat obcaecati corrupti quos excepturi facere assumenda voluptas. Error, rerum. Facere."
     },
     {
       "id": "buzo-01",
@@ -20,20 +25,30 @@
         "id": "buzos"
       },
       "precio": 10000,
+      "cuotas": 12,
+      "precioCuotas": 1100,
+      "envioGratis": false,
+      "envioPrecio": 1500,
       "tallas": ["S", "M", "L", "XL"],
-    "colores": ["Rojo", "Azul", "Verde"]
+      "colores": ["Rojo", "Azul", "Verde"],
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab ullam aperiam eum dolorum vitae dolor fugit? Quisquam nesciunt fugiat obcaecati corrupti quos excepturi facere assumenda voluptas. Error, rerum. Facere."
     },
     {
       "id": "gorra-01",
-      "titulo": "Gorra",
+      "titulo": "Gorra bien piola",
       "imagen": "img/gorra.jpg",
       "categoria": {
         "nombre": "Gorras",
         "id": "gorras"
       },
       "precio": 7000,
+      "cuotas": 6,
+      "precioCuotas": 1500,
+      "envioGratis": true,
+      "envioPrecio": 0,
       "tallas": ["S", "M", "L", "XL"],
-    "colores": ["Rojo", "Azul", "Verde"]
+    "colores": ["Rojo", "Azul", "Verde"],
+    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab ullam aperiam eum dolorum vitae dolor fugit? Quisquam nesciunt fugiat obcaecati corrupti quos excepturi facere assumenda voluptas. Error, rerum. Facere."
     },
     {
       "id": "pantalon-01",
@@ -44,8 +59,13 @@
         "id": "pantalones"
       },
       "precio": 12000,
+      "cuotas": 12,
+      "precioCuotas": 1500,
+      "envioGratis": false,
+      "envioPrecio": 1500,
       "tallas": ["S", "M", "L", "XL"],
-    "colores": ["Rojo", "Azul", "Verde"]
+    "colores": ["Rojo", "Azul", "Verde"],
+    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab ullam aperiam eum dolorum vitae dolor fugit? Quisquam nesciunt fugiat obcaecati corrupti quos excepturi facere assumenda voluptas. Error, rerum. Facere."
     },
     {
       "id": "remera-01",
@@ -56,20 +76,30 @@
         "id": "remeras"
       },
       "precio": 8000,
+      "cuotas": 6,
+      "precioCuotas": 2000,
+      "envioGratis": true,
+      "envioPrecio": 0,
       "tallas": ["S", "M", "L", "XL"],
-    "colores": ["Rojo", "Azul", "Verde"]
+    "colores": ["Rojo", "Azul", "Verde"],
+    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab ullam aperiam eum dolorum vitae dolor fugit? Quisquam nesciunt fugiat obcaecati corrupti quos excepturi facere assumenda voluptas. Error, rerum. Facere."
     },
     {
       "id": "remera-02",
-      "titulo": "Remera facha",
+      "titulo": "Remera fachera facheria",
       "imagen": "img/remera.png",
       "categoria": {
         "nombre": "Remeras",
         "id": "remeras"
       },
       "precio": 8000,
+      "cuotas": 6,
+      "precioCuotas": 2000,
+      "envioGratis": false,
+      "envioPrecio": 1500,
       "tallas": ["S", "M", "L", "XL"],
-    "colores": ["Rojo", "Azul", "Verde"]
+    "colores": ["Rojo", "Azul", "Verde"],
+    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab ullam aperiam eum dolorum vitae dolor fugit? Quisquam nesciunt fugiat obcaecati corrupti quos excepturi facere assumenda voluptas. Error, rerum. Facere."
     },
     {
       "id": "sapatillas-01",
@@ -80,20 +110,30 @@
         "id": "zapatillas"
       },
       "precio": 30000,
+      "cuotas": 12,
+      "precioCuotas": 3000,
+      "envioGratis": true,
+      "envioPrecio": 0,
       "tallas": ["S", "M", "L", "XL"],
-    "colores": ["Rojo", "Azul", "Verde"]
+    "colores": ["Rojo", "Azul", "Verde"],
+    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab ullam aperiam eum dolorum vitae dolor fugit? Quisquam nesciunt fugiat obcaecati corrupti quos excepturi facere assumenda voluptas. Error, rerum. Facere."
     },
     {
       "id": "gorra-02",
-      "titulo": "Gorra",
+      "titulo": "Gorra gorrita gorron",
       "imagen": "img/gorra1.jpg",
       "categoria": {
         "nombre": "Gorras",
         "id": "gorras"
       },
       "precio": 7000,
+      "cuotas": 6,
+      "precioCuotas": 1500,
+      "envioGratis": false,
+      "envioPrecio": 1500,
       "tallas": ["S", "M", "L", "XL"],
-    "colores": ["Rojo", "Azul", "Verde"]
+    "colores": ["Rojo", "Azul", "Verde"],
+    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab ullam aperiam eum dolorum vitae dolor fugit? Quisquam nesciunt fugiat obcaecati corrupti quos excepturi facere assumenda voluptas. Error, rerum. Facere."
     },
     {
       "id": "sapatillas-02",
@@ -104,19 +144,29 @@
         "id": "zapatillas"
       },
       "precio": 30000,
+      "cuotas": 12,
+      "precioCuotas": 3000,
+      "envioGratis": true,
+      "envioPrecio": 0,
       "tallas": ["S", "M", "L", "XL"],
-    "colores": ["Rojo", "Azul", "Verde"]
+    "colores": ["Rojo", "Azul", "Verde"],
+    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab ullam aperiam eum dolorum vitae dolor fugit? Quisquam nesciunt fugiat obcaecati corrupti quos excepturi facere assumenda voluptas. Error, rerum. Facere."
     },
     {
       "id": "buzo-02",
       "titulo": "Buzo facherito",
       "imagen": "img/buzo.jpg",
-      "categoria": {
-        "nombre": "Buzos",
-        "id": "buzos"
-      },
       "precio": 10000,
+      "cuotas": 12,
+      "precioCuotas": 1100,
+      "envioGratis": false,
+      "envioPrecio": 1500,
       "tallas": ["S", "M", "L", "XL"],
-    "colores": ["Rojo", "Azul", "Verde"]
+    "colores": ["Rojo", "Azul", "Verde"],
+    "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab ullam aperiam eum dolorum vitae dolor fugit? Quisquam nesciunt fugiat obcaecati corrupti quos excepturi facere assumenda voluptas. Error, rerum. Facere.",
+    "categoria": {
+      "nombre": "Buzos",
+      "id": "buzos"
+    }
     }
   ]

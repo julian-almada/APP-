@@ -1,26 +1,55 @@
-// Función para mostrar el detalle del producto en la página
-function mostrarDetalleProducto(id) {
-    const product = productos.find(item => item.id === id);
+document.addEventListener("DOMContentLoaded", function () {
+  const mainImage = document.querySelector(".main-image");
+  const thumbnails = document.querySelectorAll(".thumbnail");
 
-    if (product) {
-        const productDetailDiv = document.getElementById("productDetail");
-        productDetailDiv.innerHTML = `
-            <h2>${product.nombre}</h2>
-            <p><strong>Precio:</strong> $${product.precio.toFixed(2)}</p>
-            <p>${product.descripcion}</p>
-            <img src="${product.imagen}" alt="${product.nombre}">
-        `;
-    } else {
-        console.error("Producto no encontrado");
-    }
-}
+  mainImage.src = thumbnails[0].src;
+  thumbnails[0].classList.add("active");
 
-// Agregar eventos de clic a los enlaces de productos para mostrar el detalle del producto correspondiente
-const productLinks = document.querySelectorAll(".productLink");
-productLinks.forEach(link => {
-    link.addEventListener("click", function(event) {
-        event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
-        const productId = parseInt(link.dataset.id, 10);
-        mostrarDetalleProducto(productId);
+  thumbnails.forEach((thumbnail) => {
+    thumbnail.addEventListener("click", function () {
+      const imageUrl = this.src;
+      mainImage.src = imageUrl;
+
+      thumbnails.forEach((thumb) => thumb.classList.remove("active"));
+      this.classList.add("active");
     });
+  });
+
+  const botonAgregar = document.querySelector(".boton-agregar");
+  botonAgregar.addEventListener("click", accion);
+
+  const garantiaButtons = document.querySelectorAll('.garantia-button');
+  garantiaButtons.forEach(button => {
+    const garantiaId = button.dataset.garantia;
+    const garantiaAlert = document.getElementById(garantiaId);
+
+    button.addEventListener('click', function(){
+      garantiaAlert.style.display = "block";
+    });
+  });
+
+  const cerrarAlertaBtns = document.querySelectorAll(".cerrar-alerta");
+  cerrarAlertaBtns.forEach(btn => {
+    btn.addEventListener("click", function () {
+      const alerta = this.parentNode; // Obtener el div padre (la alerta)
+      alerta.style.display = "none"; // Ocultar la alerta al hacer clic en el botón de cerrar
+    });
+  });
 });
+
+function accion() {
+  Toastify({
+    text: "Producto agregado",
+    duration: 3000,
+    gravity: "top",
+    position: "left",
+    stopOnFocus: true,
+    style: {
+      background: "linear-gradient(to right, #25d1b2, rgba(201, 195, 195, 0.863))",
+      borderRadius: "10px",
+      color: "black",
+      padding: "8px"
+    },
+    onClick: function () {}
+  }).showToast();
+}

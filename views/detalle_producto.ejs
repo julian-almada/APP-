@@ -1,34 +1,63 @@
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<link rel="stylesheet" href="css/productDetail.css">
+<link rel="stylesheet" href="css/medias.css">
+
 <%- include("partials/header") %>
-  <section class="productDetail">
-    <div class="imagenes-producto">
+  <div class="productDetail">
+    <div class="detalle-producto">
+        
         
     </div>
+</div>
 
-
-    <div class="product-detail">
-        <h3 id="nombre-producto"></h3>
-        <h2 id="precio-producto"></h2>
-
-        <div class="opcional">
-            <label for="detalle1">Detalle</label>
-            <input type="number" name="detalle1">
-        </div>
-
-        <div class="opcional">
-            <label for="detalle2">Detalle</label>
-            <input type="text" name="detalle2">
-        </div>
-
-        <button class="product-btn">Añadir al carrito</button>
-        <button class="product-btn">Comprar ahora</button>
-
-        <p>Descripción completa del producto e informacion adicional.
-            <br>
-            <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ratione necessitatibus natus veritatis similique unde id reprehenderit maxime repellat! Illum veniam cupiditate quidem, iure aspernatur quasi laudantium qui minus mollitia.
-        </p>
+<div class="info-extra">
+  <div class="garantias">
+    <div class="garantia" id="btnAlerta1"><h5><span class="material-symbols-outlined"> settings_backup_restore </span> Devolución gratis</h5></div>
+    <div class="garantia" id="btnAlerta2"><h5><span class="material-symbols-outlined">verified_user</span> Compra protegida</h5></div>
+    <div class="garantia" id="btnAlerta3"><h5><span class="material-symbols-outlined">workspace_premium</span> 12 Meses de grantía</h5></div>
+  
+    <div class="alerta-garantia" id="alerta1">
+      <h2>Podés devolver este producto gratis. ¡No importa el motivo!</h2>
+      <p><span class="material-symbols-outlined">calendar_today</span>Tenés 30 días desde que te llega.</p>
+      <p><span class="material-symbols-outlined">replay</span>Podés enviarlo desde un correo o un punto de despacho cercano.</p>
+      <p><span class="material-symbols-outlined">monetization_on</span>Es importante que revises las políticas de devolución.</p>
+      <button class="cerrar-alerta">&times;</button>
     </div>
-</section>
+  
+    <div class="alerta-garantia" id="alerta2" style="display: none;">
+      <h2>Recibí el producto que esperabas o te devolvemos tu dinero.</h2>
+      <button class="cerrar-alerta">&times;</button>
+    </div>
+  
+    <div class="alerta-garantia" id="alerta3" style="display: none;">
+      <h2>Con tu compra tenes 12 meses de garantía de fábrica en tu producto.</h2>
+      <button class="cerrar-alerta">&times;</button>
+    </div>
+  </div>
+  
+  <div class="medios_de_pago">
+        <h3>Medios de pago.</h3>
+        <h4>Tarjetas de crédito.</h4>
+          <div class="medios-de-pago">
+            <img decoding="async" src="https://http2.mlstatic.com/storage/logos-api-admin/a5f047d0-9be0-11ec-aad4-c3381f368aaf-m.svg" class="ui-pdp-image ui-pdp-payment-icon" alt="Visa">
+            <img decoding="async" src="https://http2.mlstatic.com/storage/logos-api-admin/fbf867c0-9108-11ed-87b1-fd4dd99fac51-m.svg" class="ui-pdp-image ui-pdp-payment-icon" alt="American Express">
+            <img decoding="async" src="https://http2.mlstatic.com/storage/logos-api-admin/992bc350-f3be-11eb-826e-6db365b9e0dd-m.svg" class="ui-pdp-image ui-pdp-payment-icon" alt="Naranja">
+            <img decoding="async" src="https://http2.mlstatic.com/storage/logos-api-admin/aa2b8f70-5c85-11ec-ae75-df2bef173be2-m.svg" class="ui-pdp-image ui-pdp-payment-icon" alt="Mastercard">
+          </div>
+        <h4>Tarjetas de débito.</h4>
+          <div class="medios-de-pago">
+            <img decoding="async" src="https://http2.mlstatic.com/storage/logos-api-admin/312238e0-571b-11e8-823a-758d95db88db-m.svg" class="ui-pdp-image ui-pdp-payment-icon" alt="Visa Débito">
+            <img decoding="async" src="https://http2.mlstatic.com/storage/logos-api-admin/ce454480-445f-11eb-bf78-3b1ee7bf744c-m.svg" class="ui-pdp-image ui-pdp-payment-icon" alt="Maestro">
+            <img decoding="async" src="https://http2.mlstatic.com/storage/logos-api-admin/157dce60-571b-11e8-95d8-631c1a9a92a9-m.svg" class="ui-pdp-image ui-pdp-payment-icon" alt="Mastercard Débito">
+            <img decoding="async" src="https://http2.mlstatic.com/storage/logos-api-admin/cb0af1c0-f3be-11eb-8e0d-6f4af49bf82e-m.svg" class="ui-pdp-image ui-pdp-payment-icon" alt="Cabal Débito">
+          </div>
+        <h4>Efectivo</h4>
+          <div class="medios-de-pago">
+            <img decoding="async" src="https://http2.mlstatic.com/storage/logos-api-admin/fec5f230-06ee-11ea-8e1e-273366cc763d-m.svg" class="ui-pdp-image ui-pdp-payment-icon" alt="PagoFacil">
+            <img decoding="async" src="https://http2.mlstatic.com/storage/logos-api-admin/443c34d0-571b-11e8-823a-758d95db88db-m.svg" class="ui-pdp-image ui-pdp-payment-icon" alt="Rapipago">
+          </div>
+  </div>
+</div>
  
 
   <script src="/scripts/detalleProducto.js"></script>

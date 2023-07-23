@@ -9,72 +9,231 @@
     --negro: rgb(20, 20, 20);
 }
 
-
-
-.product-img {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.productDetail {
+  margin-top: 45px;
 }
 
-.img-principal {
+.carousel-container {
+    max-width: 800px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .carousel-main {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    border-radius: 8px;
+  }
+  
+  .main-image {
     width: 100%;
-    height: 200px;
-    border: solid 1px black;
+    height: 100%;
     object-fit: cover;
-}
-
-.product-img-s {
+  }
+  
+  .carousel-thumbnails {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-top: 10px;
-    justify-content: space-between;
-}
-
-.product-img-s img {
-    width: 100%;
-    border: solid 1px black;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .thumbnail {
+    width: 60px;
     height: 60px;
-    white-space: 10px;
-}
+    object-fit: cover;
+    
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.7;
+  }
 
-.product-img-s img:not(:first-of-type) {
-    margin-left: 10px;
-}
+  .thumbnail:hover {
+    border: 2px solid var(--turquesa);
+    transform: scale(1.2);
+  }
+  
+  .thumbnail.active {
+    opacity: 1;
+  }
 
-.product-detail {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.product-detail h3 {
+  .nombre-producto {
     font-size: 30px;
-    margin-top: 20px;
-}
+  }
 
-.product-detail h2 {
-    font-size: 40px;
-    margin-top: 20px;
-}
+  .precio-producto {
+    font-size: 25px;
+  }
 
-.product-detail .opcional {
+  .tallas-disponibles {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
     font-size: 20px;
-    margin: 10px 0;
+    justify-content: space-between;
+  }
+
+  .colores-disponibles {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+  }
+
+  .tallas-disponibles select {
+    display: flex;
+    background-color: var(--gris);
+    width: 65px;
+    justify-content: space-between;
+  }
+
+  .colores-disponibles select {
+    display: flex;
+    background-color: var(--gris);
+    width: 65px;
+    justify-content: space-between;
+  }
+
+  .colores-disponibles select option[value="Rojo"] {
+    color: #d31414;
+  }
+  
+  .colores-disponibles select option[value="Verde"] {
+    color: #19db3d;
+  }
+  
+  .colores-disponibles select option[value="Azul"] {
+    color: #3615c7;
+  }
+  
+  .detalle-producto button {
+    width: 100%;
+  }
+
+  .darck-theme .tallas-disponibles select {
+    background-color: var(--negro);
+    color: white;
+  }
+
+  .darck-theme .colores-disponibles select {
+    background-color: var(--negro);
+    color: white;
+  }
+
+  .descripcion-cuotas {
+    color: green;
+    font-size: 15px;
+ }
+
+ .descripcion-envio {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
 }
 
-.product-detail .opcional input {
-    border: solid 1.5px black;
+.envio-gratis {
+  color: green;
 }
-.darck-theme .opcional input {
-    background: rgb(20, 20, 20);
-    color: white;
-    border: solid 1.5px white;
+
+.info-extra {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
-.product-detail p {
-    font-size: 20px;
+
+.garantias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: max-height 0.3s ease-out;
 }
+
+.darck-theme .garantias h5{
+  color: rgb(236, 230, 230);
+}
+
+.garantia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background: #5dd6d618;
+  margin: 2px;
+  cursor: pointer;
+  transition: linear .2s;
+}
+.garantia:hover {
+  transform: scale(1.1);
+}
+
+.garantia h5 {
+  font-size: 18px;
+  color: var(--verde);
+}
+
+.alerta-garantia {
+  position: absolute;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 15px;
+  transition: linear .5s;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.alerta-garantia {
+  display: none;
+}
+
+.alerta-garantia h2 {
+  font-size: 25px;
+  margin: 10px;
+}
+
+.alerta-garantia p {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  gap: 5px;
+}
+
+.alerta-garantia button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  top: 0;
+  right: 5px;
+  font-size: 25px;
+  border: none;
+  color: var(--verde);
+  background: transparent;
+}
+
+.darck-theme .alerta-garantia {
+  background: black
+}
+
+.darck-theme .alerta-garantia button {
+  border: none;
+  background: transparent;
+}
+
+
+
+.medios_de_pago h4 {
+  margin: 10px;
+}
+
+.medios_de_pago .medios-de-pago {
+  display: flex;
+  gap: 30px;
+}
+
+
